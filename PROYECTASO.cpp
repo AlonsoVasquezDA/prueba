@@ -26,6 +26,7 @@ struct DATOS {
 int main (){
      int op;
      do{
+        system("cls"); 
         cout<<"::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::"<<endl;
         cout<<"---------------BIENVENIDO A BANCO BCHP-----------------"<<endl<<endl;
         cout<<" 1.- Crear una cuenta. "<<endl;
@@ -34,6 +35,7 @@ int main (){
         cout<<"Ingrese una de las opciones: ";
         cout<<endl;
         cin>>op;
+        cin.ignore();
         switch (op){
             case 1: 
                    break;
@@ -43,7 +45,7 @@ int main (){
                    char ops;
                    cout<<" Estas seguro de salir? (S/N)"<<endl;
                    cin>>ops;
-                   if (ops == 'S'){
+                   if (ops == 'S' || ops == 's' ){
                       op = 3;
                       cout<<"Gracias por confiar en el BANCO BCHP. HASTA PRONTO."<<endl;
                    } else {
